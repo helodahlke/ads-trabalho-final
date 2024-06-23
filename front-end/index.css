@@ -1,0 +1,63 @@
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.heart-button {
+    font-size: 2rem;
+    color: grey;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.heart-button.liked {
+    color: red;
+}
+.eachPost, .user-info, .new-post, .pre-post {
+    border: solid 3px gainsboro;
+}
+
+.conteudo-postagem,  .autor-postagem, .new-post-label, #post-content, .pre-post {
+    margin-left: 2%;
+}
+.user-name, .new-post-label {
+    margin-top: 2%;
+}
+
+.user-email {
+    margin-bottom: 2%;
+}
+
+.heart-section{
+    border-top: outset 1px;
+    max-width: 96%;
+}
+.fas {
+   margin-right: 2%;
+}
+#post-content{
+    max-width: 95%
+}
+.pre-post{
+    text-align:center;
+    max-width: 30%;
+    background: #ddd;
+    margin-left: 10%;
+}
+.btn, .pre-post {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1px 10px 14px;
+}
+.user-name-info, .user-email-info, .user-name, .user-email {
+    margin-left: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 10px 10px 0;
+}
+span {
+    margin-left: 2%;
+}

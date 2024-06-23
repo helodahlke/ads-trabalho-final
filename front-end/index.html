@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha rede social</title>
+    <link rel="stylesheet" href="./index.css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#" class="nav-item" data-target="#timeline-content">
+                <i class="fas fa-thin fa-users"></i>Postagens que seus amigos colocaram nos perfis deles</a></li>
+            <li><a href="#" class="nav-item" data-target="#profile-content"><i class="fas fa-light fa-user"></i>Como seus amigos veem voce</a></li>
+            <li><a href="#" class="nav-item" data-target="#new-post-content"><i class="fas fa-thin fa-comment"></i>Criar nova postagem</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="timeline-content" class="content">
+            <h3>Postagens suas e de seus amigos</h3>
+            <div class="post"></div>
+        </div>
+        <div id="profile-content" class="content">
+            <h3 class="user-profile"><i class="fas fa-solid fa-face-grin-stars"></i>Perfil do Usuário</h3>
+            <div class="user-info">
+                <span><i class="user-name-info fas fa-sharp fa-thin fa-file-signature"></i><div class="user-name"></div></span><br>
+                <span><i class="user-email-info fas fa-regular fa-envelope"></i><div class="user-email"></div></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="new-post-content" class="content">
+                    <h2>Criar Nova Publicação</h2>
+                    <div class="new-post">
+                        <label class="new-post-label" for="post-content">Conteúdo:</label><br>
+                        <textarea class="form-control" id="post-content" name="post-content" rows="4" cols="30"></textarea><br><br>
+                        <div class="pre-post">Após clicar no botão de postar, todos os amigos que você tem irão ver o que você escreveu.</div>
+                        <button type="button" class="btn btn-success btn-create-post" onclick="criarPostagem()">Postar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
